@@ -1,0 +1,29 @@
+{
+    "stack-prefix": "jenkins",
+    "stack-suffix": "stack",
+    "template-path": "/cft/ageratum-stack.yaml",
+    "project-name": "ageratum",
+    "parameters": {
+        "devl": [
+            {
+                "Environment": "devl",
+                "VpcId": "vpc-0da38119f88549fad",
+                "SubnetId": "subnet-084921ee26157de4d"
+            }
+        ],
+        "test": [
+            {
+                "Environment": "test",
+                "VpcId": "",
+                "SubnetId": ""
+            }
+        ],
+        "prod": [
+            {
+                "Environment": "prod",
+                "VpcId": "",
+                "SubnetId": ""
+            }
+        ]
+    }
+}
